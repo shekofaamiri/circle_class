@@ -12,3 +12,9 @@ class circle{
 		float p();
 		float s();
 };
+circle::circle(float a){
+	if (a < 0)
+		r = 0;
+	else
+		r = a;
+}
