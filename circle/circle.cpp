@@ -18,3 +18,20 @@ circle::circle(float a){
 	else
 		r = a;
 }
+void circle::set_r(float a){
+	if (a < 0)
+		a = 0;
+	r = a;
+}
+
+float circle::get_r(){
+	return r;
+}
+
+float circle::p(){
+	return 2 * PI * r;  // محیط دایره
+}
+
+float circle::s(){
+	return PI * r * r;  // مساحت دایره
+}
