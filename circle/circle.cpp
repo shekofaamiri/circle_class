@@ -35,3 +35,10 @@ float circle::p(){
 float circle::s(){
 	return PI * r * r;  // مساحت دایره
 }
+int main(){
+	circle h(0);   // باید یک عدد به کانستراکتور پاس بدید
+	h.set_r(-2);
+	float e = h.get_r();
+	cout << e << endl;  // خروجی باید 0 باشه چون مقدار منفی وارد کردید
+	return 0;
+}
